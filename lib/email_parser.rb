@@ -13,7 +13,7 @@ class EmailParser
   def parse
     #binding.pry
     trimmed = @email_list.tr(',', '')
-    trimmed.split(' ')
+    trimmed.split(' ').uniq
   end
 
 end
