@@ -11,7 +11,7 @@ class EmailParser
   end
 
   def parse
-    binding.pry
+    #binding.pry
     return @email_list.split(', ') if @email_list[','] != nil
     return @email_list.split(' ')
   end
